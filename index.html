@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joan Sebastian Carrillo Baron">
+    <meta name="description" content="E-commerce con JavaScript, HTML5 y CSS3">
+    <title>E-commerce | Sebastian Carrillo</title>
+    <link href="src/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="src/css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="title">
+            <h1>E-commerce</h1>
+        </div>
+        <div class="car">
+            <span id="articles-amount">0</span>
+            <ion-icon name="cart-outline" id="shopping-car"></ion-icon>
+        </div>
+    </header>
+    <section id="search">
+        <p>Search</p>
+        <input type="text" placeholder="Search & hit enter..." id="search-input">
+    </section>
+    <section id="products">
+        <h2>Products</h2>
+        <hr>
+        <div class="products-box" id="products-container">
+            <article class="product" id="product-1">
+                <img src="assets/imgs/products/mx-keys.png">
+                <h4 class="title">MX Keys</h4>
+                <h5 class="description">The Master Series by Logitech</h5>
+                <span>$<p id="price">420,000</p></span>
+                <button type="button" class="btn btn-success" onclick="addCart('product-1');">Add to Cart</button>
+            </article>
+            <article class="product" id="product-2">
+                <img src="assets/imgs/products/k380-multi-device-bluetooth-keyboard.png">
+                <h4 class="title">K380 Multi-Device</h4>
+                <h5 class="description">The Master Series by Logitech</h5>
+                <span>$<p id="price">320,000</p></span>
+                <button type="button" class="btn btn-success" onclick="addCart('product-2');">Add to Cart</button>
+            </article>
+            <article class="product" id="product-3">
+                <img src="assets/imgs/products/wireless-touch-keyboard-k400-plus.png">
+                <h4 class="title">K750 Wireless Solar</h4>
+                <h5 class="description">The Master Series by Logitech</h5>
+                <span>$<p id="price">340,000</p></span>
+                <button type="button" class="btn btn-success" onclick="addCart('product-3');">Add to Cart</button>
+            </article>
+            <article class="product" id="product-4">
+                <img src="assets/imgs/products/mx-master-3.png" id="mouse-1">
+                <h4 class="title">Mx Master 3</h4>
+                <h5 class="description">The Master Series by Logitech</h5>
+                <span>$<p id="price">450,000</p></span>
+                <button type="button" class="btn btn-success" onclick="addCart('product-4');">Add to Cart</button>
+            </article>
+            <article class="product" id="product-5">
+                <img src="assets/imgs/products/color-collection.png" id="mouse-2">
+                <h4 class="title">Wireless Mouse Color</h4>
+                <h5 class="description">The Master Series by Logitech</h5>
+                <span>$<p id="price">170,000</p></span>
+                <button type="button" class="btn btn-success" onclick="addCart('product-5');">Add to Cart</button>
+            </article>
+            <article class="product" id="product-6">
+                <img src="assets/imgs/products/mx-vertical-pdp.png" id="mouse-3">
+                <h4 class="title">MX Vertical</h4>
+                <h5 class="description">The Master Series by Logitech</h5>
+                <span>$<p id="price">600,000</p></span>
+                <button type="button" class="btn btn-success" onclick="addCart('product-6');">Add to Cart</button>
+            </article>
+        </div>
+    </section>
+    <!-- Section Pay -->
+
+    <section id="pay">
+        <h2>Shopping Car</h2>
+        <hr>
+        <div class="Total">
+            <p>TOTAL: $<span id="total-car">0.00</span></p>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-primary" id="update-products">Actualizar compra</button>
+            <button class="btn btn-secondary" id="continue-shopping">Seguir comprando</button>
+        </div>
+        <article id="elements-car">
+            <div class="info">
+                <p>ID</p>
+                <p>Nombre del Producto</p>
+                <p>Cantidad</p>
+                <p>Precio c/u</p>
+                <p></p>
+            </div>
+            <hr>
+            <div id="articles">
+            </div>
+        </article>
+    </section>
+    <div id="add-successful">
+        <p>Ha añadido el producto correctamente!</p>
+    </div>
+    <div id="error-UpdateCar">
+        <p>Error al actualizar el carrito de compras!</p>
+    </div>
+    <div id="error-amount">
+        <p>No puede volver a agregar el producto!</p>
+        <p>Si desea añadir mas cantidades dirijase al carro!</p>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>

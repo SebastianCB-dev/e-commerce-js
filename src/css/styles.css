@@ -1,0 +1,288 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  user-select: none;
+  outline: none;
+}
+
+body {
+  background-image: url("/assets/imgs/background-ecommerce.jpg");
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+#header {
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.637);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+#header .title {
+  margin-left: 50px;
+}
+#header .title h1 {
+  line-height: 60px;
+}
+#header .car {
+  margin-right: 50px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+#header .car span {
+  line-height: 70px;
+}
+#header .car ion-icon {
+  display: block;
+  padding-top: 18px;
+  font-size: 35px;
+  transition: all 300ms;
+  cursor: pointer;
+  margin-left: 10px;
+}
+#header .car ion-icon:hover {
+  color: #b8b8b8;
+}
+
+#search {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.637);
+}
+#search p {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+}
+#search input {
+  display: block;
+  width: 500px;
+  margin: 0px auto;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid #ccc;
+  margin-top: -10px;
+}
+
+#products {
+  width: 80%;
+  margin: 0px auto;
+  height: auto;
+  background-color: #fff;
+  margin-top: 60px;
+  overflow: hidden;
+}
+#products h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 45px;
+}
+#products .products-box {
+  width: 90%;
+  margin: 0px auto;
+  height: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#products .products-box .product {
+  width: 400px;
+  height: 500px;
+  border: 2px solid #ccc;
+  margin-bottom: 50px;
+  transition: all 300ms;
+}
+#products .products-box .product img {
+  display: block;
+  width: 80%;
+  margin: 0px auto;
+}
+#products .products-box .product #mouse-1 {
+  width: 250px;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+#products .products-box .product #mouse-2 {
+  width: 270px;
+  margin-bottom: 50px;
+}
+#products .products-box .product #mouse-3 {
+  width: 270px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#products .products-box .product h4,
+#products .products-box .product h5 {
+  text-align: center;
+}
+#products .products-box .product h4 {
+  margin-top: -30px;
+  font-size: 30px;
+}
+#products .products-box .product h5 {
+  font-size: 13px;
+  opacity: 0;
+  transition: all 300ms;
+}
+#products .products-box .product span {
+  width: 182px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 25px;
+}
+#products .products-box .product button {
+  display: block;
+  margin: 0px auto;
+}
+#products .products-box .product:hover {
+  box-shadow: 0px 0px 25px #ccc;
+}
+#products .products-box .product:hover h5 {
+  opacity: 1;
+}
+
+#pay {
+  width: 80%;
+  height: 600px;
+  background-color: #fff;
+  margin: 0px auto;
+  margin-top: 70px;
+  display: none;
+}
+#pay h2 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 40px;
+}
+#pay .Total {
+  text-align: end;
+  margin-right: 250px;
+}
+#pay .Total p {
+  font-weight: bold;
+  font-size: 25px;
+}
+#pay .buttons {
+  display: flex;
+  width: 500px;
+  margin: 0px auto;
+}
+#pay .buttons button {
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+#pay #elements-car {
+  width: 70%;
+  margin: 0px auto;
+  border: 2px solid #ccc;
+  height: 300px;
+  overflow-y: auto;
+}
+#pay #elements-car .info {
+  display: flex;
+  justify-content: space-around;
+  height: 10px;
+  font-weight: bold;
+}
+#pay #elements-car .article {
+  display: flex;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 25px;
+}
+#pay #elements-car .article #id-article {
+  width: 60px;
+  margin-left: 80px;
+}
+#pay #elements-car .article #name-article {
+  width: 280px;
+  margin-left: 115px;
+}
+#pay #elements-car .article #amount-article {
+  margin-left: 40px;
+  height: 36px;
+  margin-top: -4px;
+}
+#pay #elements-car .article .parrafo-price {
+  margin-left: 144px;
+  margin-right: 120px;
+}
+#pay #elements-car .article button {
+  height: 37px;
+  margin-top: -5px;
+}
+#pay #elements-car .article button ion-icon {
+  font-size: 25px;
+}
+#pay #elements-car .article:last-child {
+  border-bottom: none;
+}
+
+#add-successful {
+  position: fixed;
+  top: 0%;
+  left: 37%;
+  width: 500px;
+  background-color: #DEF0D8;
+  border: 2px solid #588667;
+  color: #588667;
+  height: 50px;
+  transition: all 300ms;
+  opacity: 0;
+}
+#add-successful p {
+  text-align: center;
+  line-height: 44px;
+}
+
+#error-UpdateCar {
+  position: fixed;
+  top: 0%;
+  left: 37%;
+  width: 500px;
+  background-color: #F2DEDF;
+  border: 2px solid #B84F5E;
+  color: #B84F5E;
+  height: 50px;
+  transition: all 300ms;
+  opacity: 0;
+}
+#error-UpdateCar p {
+  text-align: center;
+  line-height: 44px;
+}
+
+#error-amount {
+  position: fixed;
+  top: 0%;
+  left: 37%;
+  width: 500px;
+  background-color: #F2DEDF;
+  border: 2px solid #B84F5E;
+  color: #B84F5E;
+  height: 85px;
+  transition: all 300ms;
+  opacity: 0;
+  padding-top: 15px;
+}
+#error-amount p {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/*# sourceMappingURL=styles.css.map */

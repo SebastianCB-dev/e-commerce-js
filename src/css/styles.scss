@@ -1,0 +1,329 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+$background-content: rgba(0, 0, 0, 0.637);
+
+* {
+    user-select: none;
+    outline: none;
+}
+
+body {
+    background-image: url('/assets/imgs/background-ecommerce.jpg');
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+#header {
+    height: 70px;
+    background-color: $background-content;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+
+    .title {
+        margin-left: 50px;
+
+        h1 {
+            line-height: 60px;
+        }
+    }
+
+    .car {
+        margin-right: 50px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+
+        span {
+            line-height: 70px;
+        }
+
+        ion-icon {
+            display: block;
+            padding-top: 18px;
+            font-size: 35px;
+            transition: all 300ms;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        ion-icon:hover {
+            color: rgb(184, 184, 184);
+        }
+    }
+}
+
+#search {
+    height: 100px;
+    background-color: $background-content;
+    p {
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    input {
+        display: block;
+        width: 500px;
+        margin: 0px auto;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 2px solid #ccc;
+        margin-top: -10px;
+    }
+}
+
+#products {
+    width: 80%;
+    margin: 0px auto;
+    height: auto;
+    background-color: #fff;
+    margin-top: 60px;
+    overflow: hidden;
+
+    h2 {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 45px;
+    }
+
+    .products-box {
+        width: 90%;
+        margin: 0px auto;
+        height: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .product {
+            width: 400px;
+            height: 500px;
+            border: 2px solid #ccc;
+            margin-bottom: 50px;
+            transition: all 300ms;
+
+            img {
+                display: block;
+                width: 80%;
+                margin: 0px auto;
+            }
+
+            #mouse-1 {
+                width: 250px;
+                margin-top: 30px;
+                margin-bottom: 45px;
+            }
+
+            #mouse-2 {
+                width: 270px;
+                margin-bottom: 50px;
+            }
+
+            #mouse-3 {
+                width: 270px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            h4,
+            h5 {
+                text-align: center;
+            }
+
+            h4 {
+                margin-top: -30px;
+                font-size: 30px;
+            }
+
+            h5 {
+                font-size: 13px;
+                opacity: 0;
+                transition: all 300ms;
+            }
+
+            span {
+                width: 182px;
+                margin: 0px auto;
+                display: flex;
+                justify-content: center;
+                font-size: 25px;
+                margin-top: 25px;
+            }
+
+            button {
+                display: block;
+                margin: 0px auto;
+            }
+        }
+
+        .product:hover {
+            box-shadow: 0px 0px 25px #ccc;
+
+            h5 {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#pay {
+    width: 80%;
+    height: 600px;
+    background-color: #fff;
+    margin: 0px auto;
+    margin-top: 70px;
+    display: none;
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+    .Total {
+        text-align: end;
+        margin-right: 250px;
+
+        p {
+            font-weight: bold;
+            font-size: 25px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        width: 500px;
+        margin: 0px auto;
+
+        button {
+            display: block;
+            margin: 0px auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    #elements-car {
+        width: 70%;
+        margin: 0px auto;
+        border: 2px solid #ccc;
+        height: 300px;
+        overflow-y: auto;
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            height: 10px;
+            font-weight: bold;
+        }
+
+        .article {
+            display: flex;
+            height: 50px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 25px;
+
+            #id-article {
+                width: 60px;
+                margin-left: 80px;
+            }
+
+            #name-article {
+                width: 280px;
+                margin-left: 115px;
+            }
+
+            #amount-article {
+                margin-left: 40px;
+                height: 36px;
+                margin-top: -4px;
+            }
+
+            .parrafo-price {
+                margin-left: 144px;
+                margin-right: 120px;
+            }
+
+            button {
+                height: 37px;
+                margin-top: -5px;
+
+                ion-icon {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .article:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+
+
+
+
+
+#add-successful {
+    position: fixed;
+    top: 0%;
+    left: 37%;
+    width: 500px;
+    background-color: #DEF0D8;
+    border: 2px solid #588667;
+    color: #588667;
+    height: 50px;
+    transition: all 300ms;
+    opacity: 0;
+
+    p {
+        text-align: center;
+        line-height: 44px;
+    }
+}
+#error-UpdateCar {
+    position: fixed;
+    top: 0%;
+    left: 37%;
+    width: 500px;
+    background-color: #F2DEDF;
+    border: 2px solid #B84F5E;
+    color: #B84F5E;
+    height: 50px;
+    transition: all 300ms;
+    opacity: 0;
+
+    p {
+        text-align: center;
+        line-height: 44px;
+    }
+}
+#error-amount {
+    position: fixed;
+    top: 0%;
+    left: 37%;
+    width: 500px;
+    background-color: #F2DEDF;
+    border: 2px solid #B84F5E;
+    color: #B84F5E;
+    height: 85px;
+    transition: all 300ms;
+    opacity: 0;
+    padding-top: 15px;
+
+    p {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+}
